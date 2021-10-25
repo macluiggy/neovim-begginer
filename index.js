@@ -1,0 +1,31 @@
+const { ayuda } = require('./helper.js')
+
+const suma = (ns) => {
+  let acumulado = 0;
+  for (i = 0; i < ns.length; i++) {
+    acumulado += ns[i];
+  }
+	ayuda()
+  return acumulado;
+} 
+//hello hello hello hello hello jajja
+const numeros = [1, 2, 3, 4, 5];
+//hello mi llabe todo bien como esta? jaja
+//hello hello hello hello hello jajja
+//hello hello
+//hola
+//hello
+const multiplicados = numeros.map(x => x * 2)
+// a pares
+const parejas = numeros.map(x => [x, x])
+
+const mascotas = [
+  { nombre: 'Puchini', edad: 12, tipo: 'perro' },
+  { nombre: 'Chanchito feliz', edad: 3, tipo: 'perro' },
+  { nombre: 'Pelusa', edad: 12, tipo: 'gato' },
+  { nombre: 'Pulga', edad: 10, tipo: 'perro' },
+]
+// edad promedio
+const edades = mascotas.map(x => x.edad)
+const resultado = suma(edades)
+console.log(resultado / edades.length);
